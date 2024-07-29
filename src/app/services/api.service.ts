@@ -31,7 +31,7 @@ export class ApiService {
   }
   getAlumnies(): Observable<any[]> {
     return this._http
-      .get<any[]>(`${baseUrl + END_POINT.event}`)
+      .get<any[]>(`${baseUrl + END_POINT.alumni}`)
       .pipe(retry(1), catchError(this.handleError));
   }
 
