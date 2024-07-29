@@ -1,0 +1,45 @@
+<div class="recent_news_area">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8 col-md-10">
+        <div class="section_title text-center mb-70">
+          <h3 class="mb-45">Our Alumini</h3>
+        </div>
+      </div>
+    </div>
+
+    <!-- "alumni_id": 3,
+        "passout_year": 2023,
+        "designation": "Software Engineer",
+        "is_placed": true,
+        "placement_date": "2023-06-29T18:30:00.000Z",
+        "placement_company": "TechCorp",
+        "user_id": 1,
+        "alumni_status": 1,
+        "created_at": "2024-07-04T06:35:02.763Z", -->
+
+    <div class="row">
+      <div class="col-md-4" *ngFor="let alumni of alumnies">
+        <div class="single__news">
+          <div class="thumb">
+            <img src="assets/img/news/1.png" alt="" />
+
+            <!-- <span class="badge">Group Study</span> -->
+          </div>
+          <div class="news_info">
+            <h4>{{ alumni.designation }}</h4>
+
+            <p class="d-flex align-items-center">
+              <span
+                ><i class="flaticon-calendar-1"></i>
+                {{ alumni.passout_year }}</span
+              >
+
+              <span>{{ alumni.placement_company }} </span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

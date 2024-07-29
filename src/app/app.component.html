@@ -1,0 +1,6 @@
+<app-header></app-header>
+<router-outlet>
+  <!-- {{ loader.isLoading() }} -->
+  <div class="loading" *ngIf="loader.isLoading()">Loading&#8230;</div>
+</router-outlet>
+<app-footer></app-footer>

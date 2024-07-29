@@ -1,0 +1,108 @@
+<!-- popular_program_area_start  -->
+<div class="popular_program_area section__padding program__page">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="section_title text-center">
+          <h3>Popular Program</h3>
+        </div>
+      </div>
+    </div>
+
+    <div class="row pt-4">
+      <div class="col-lg-4 col-md-6" *ngFor="let course of courses">
+        <div class="single__program">
+          <div class="program_thumb">
+            <img [src]="course.course_attachment" alt="" />
+          </div>
+          <div class="program__content">
+            <h4>{{ course.course_name }}</h4>
+            <p [innerHTML]="course.course_description"></p>
+            <a [routerLink]="[course.course_id, 'details']" class="boxed-btn5"
+              >Know More</a
+            >
+          </div>
+        </div>
+      </div>
+      <!-- <div class="col-lg-4 col-md-6">
+                <div class="single__program">
+                    <div class="program_thumb">
+                        <img src="assets/img/program/1.png" alt="">
+                    </div>
+                    <div class="program__content">
+                        <span>BCA</span>
+                        <h4>Bachelor of Computer Applications</h4>
+                        <p>The Bachelor of Computer Applications (BCA) programme, launched in 1996, is a 3-year course over 6 semesters. It provides a comprehensive foundation in computer science, covering fundamental and advanced topics to produce skilled professionals ready for the evolving IT industry.</p>
+                        <a href="#" class="boxed-btn5">Know More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="single__program">
+                    <div class="program_thumb">
+                        <img src="assets/img/program/2.png" alt="">
+                    </div>
+                    <div class="program__content">
+                        <span>MCA</span>
+                        <h4>Master of Computer Applications</h4>
+                        <p>The Master of Computer Applications (MCA) programme, introduced in 1996, is a 2-year, 4-semester course aimed at producing IT professionals. It covers advanced programming, database management, software engineering, web technologies, data structures, operating systems, networks, information security, AI, and data analytics, with a final semester industry project.</p>
+                        <a href="#" class="boxed-btn5">Know More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="single__program">
+                    <div class="program_thumb">
+                        <img src="assets/img/program/3.png" alt="">
+                    </div>
+                    <div class="program__content">
+                        <span>PHD</span>
+                        <h4>The Doctor of Philosophy (Ph.D.)</h4>
+                        <p>Introduced in 1996, the Ph.D. in Computer Science cultivates advanced research skills and contributes to the field's knowledge base. Spanning 3-5 years, this rigorous program is designed for careers in academia, research, or advanced industry roles, focusing on in-depth research and dissertation work.</p>
+                        <a href="#" class="boxed-btn5">Know More</a>
+                    </div>
+                </div>
+            </div> -->
+      <!-- <div class="col-lg-4 col-md-6">
+                <div class="single__program">
+                    <div class="program_thumb">
+                        <img src="assets/img/program/1.png" alt="">
+                    </div>
+                    <div class="program__content">
+                        <span>Agriculture</span>
+                        <h4>Chemical engneering</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
+                        <a href="#" class="boxed-btn5">Apply NOw</a>
+                    </div>
+                </div>
+            </div> -->
+      <!-- <div class="col-lg-4 col-md-6">
+                <div class="single__program">
+                    <div class="program_thumb">
+                        <img src="assets/img/program/2.png" alt="">
+                    </div>
+                    <div class="program__content">
+                        <span>PG-DBA</span>
+                        <h4>Post Graduate Diploma in Big Data Analytics</h4>
+                        <p>Introduced in 1996, the Post Graduate Diploma in Big Data Analytics (PG-DBA) is a one-year, full-time course. It equips professionals with skills to manage and analyze large datasets, addressing the growing demand for data analytics expertise across industries.</p>
+                        <a href="#" class="boxed-btn5">Know More</a>
+                    </div>
+                </div>
+            </div> -->
+      <!-- <div class="col-lg-4 col-md-6">
+                <div class="single__program">
+                    <div class="program_thumb">
+                        <img src="assets/img/program/3.png" alt="">
+                    </div>
+                    <div class="program__content">
+                        <span>Agriculture</span>
+                        <h4>Bio engneering</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
+                        <a href="#" class="boxed-btn5">Apply NOw</a>
+                    </div>
+                </div>
+            </div> -->
+    </div>
+  </div>
+</div>
+<!-- popular_program_area_end -->
